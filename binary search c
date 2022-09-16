@@ -1,0 +1,42 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int a[1000],i,n,k,x,y;
+    printf("size of array: ");
+    scanf("%d",&n);
+    printf("elements of array: ");
+    for (i=0;i<n;i++)
+    {
+     scanf("%d",&a[i]);
+    }
+    printf("element to be searched in the array: ");
+    scanf("%d",&k);
+   x=n/2;
+   y=a[x];
+   for (i=0;i<n;i++)
+   {
+       if (y>k)
+       {
+           for(i=0;i<y;i++)
+           if (a[i]==k)
+           printf("match found at left");
+       }
+       else if (y==k)
+       
+          printf("given key is the average value of the array");
+        
+       
+       else if (y<k)
+       {
+           for (i=x;i<n;i++)
+           if (a[i]==k)
+           printf("match found at right");
+       }
+    }
+   
+ 
+    
+ 
+    return 0;
+}
