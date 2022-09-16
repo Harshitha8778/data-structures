@@ -1,0 +1,18 @@
+from array import *
+a=array('i', [])
+n=int(input("Enter the length of the array: "))
+for i in range(n):
+    x=int(input("Enter a value: "))
+    a.append(x)
+print(a)
+
+s=int(input("Enter the number to be searched: "))
+c=0
+for j in range(n):
+    if a[j] == s:
+        print("FOUND!")
+        c+= 1
+        break
+
+if(c!=1):
+    print("NOT FOUND!")
